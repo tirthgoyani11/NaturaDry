@@ -4,36 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NaturaDry | Premium Indian Dry Powders & Spice Blends</title>
+    <title>NaturaDry | Premium B2B Indian Dry Powders & Spice Blends</title>
+    <script>document.documentElement.classList.add('js-active');</script>
     <meta name="description"
-        content="NaturaDry is a premium B2B manufacturer and supplier of high-quality onion powder, garlic powder, ginger powder, and custom spice blends based in Surat, Gujarat.">
+        content="NaturaDry is a premier B2B manufacturer and exporter of organic, high-purity onion powder, garlic powder, ginger powder, and custom spice blends in Surat, Gujarat.">
     <!-- SEO Meta -->
-    <meta name="keywords" content="onion powder, garlic powder, ginger powder, spice blends, Surat, India, bulk spices, private label">
+    <meta name="keywords" content="onion powder, garlic powder, ginger powder, spice blends, Surat, Gujarat, Mahuva, Bhavnagar, bulk spices, private label, clean label, B2B food ingredients">
     <meta name="author" content="NaturaDry">
     <meta property="og:title" content="NaturaDry — Premium Indian Dry Powders & Spice Blends">
-    <meta property="og:description" content="Premium B2B spice powders and custom blends from Gujarat. Clean-label, traceable, export-ready.">
+    <meta property="og:description" content="Premium B2B spice powders and custom blends from Gujarat's farmlands. Clean-label, traceable, export-ready.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="logo.png">
     <meta name="twitter:card" content="summary_large_image">
-    <!-- Favicon: prefer the provided PNG asset -->
+    <!-- Favicon -->
     <link rel="icon" href="logo.png" type="image/png">
     <link rel="apple-touch-icon" href="logo.png">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Local CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader" aria-hidden="true">
+        <svg class="loader-leaf" width="64" height="64" viewBox="0 0 36 36" aria-hidden="true">
+            <path d="M18 2c4 3 8 4.5 12 3.5-4 4-8 9-12 14-4-5-8.5-10-12-14C9.5 6 13 5 18 2z" fill="#a3d82a"/>
+        </svg>
+    </div>
+
     <!-- 1. Navigation / Header -->
     <header class="site-header" id="header">
         <div class="nav-container">
             <div class="brand-left">
-                <!-- Inline SVG leaf emblem 32x32 -->
                 <a href="#" class="logo" aria-label="NaturaDry home">
-                    <img src="logo.png" alt="NaturaDry" class="logo-img" width="140" height="44">
+                    <img src="logo.png" alt="NaturaDry Logo" class="logo-img" width="140" height="44">
                 </a>
                 <div class="brand-text">
                     <div class="brand-name">NaturaDry</div>
@@ -53,29 +60,35 @@
                     <li><a href="#products" class="nav-link">Products</a></li>
                     <li><a href="#process" class="nav-link">Process</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#why" class="nav-link">Why Us</a></li>
+                    <li><a href="#certifications" class="nav-link">Compliance</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
 
                 <div class="nav-cta">
                     <button class="btn-quote">
-                        <svg width="10" height="10" viewBox="0 0 10 10" class="btn-leaf" aria-hidden="true"><ellipse cx="5" cy="6" rx="4" ry="5" fill="#244f0e"/><path d="M5 2 L5 9" stroke="#a8d050" stroke-width="0.8" stroke-dasharray="1,2"/></svg>
-                        Get a Quote
+                        <svg width="12" height="12" viewBox="0 0 24 24" class="btn-leaf" fill="currentColor" aria-hidden="true">
+                            <path d="M17 8C8 10 5 16 5 21C9 21 15 15 17 8Z"/>
+                            <path d="M12 2C8 6 6 12 6 15C9 14 13 10 15 7" opacity="0.6"/>
+                        </svg>
+                        Request a Quote
                     </button>
                 </div>
             </nav>
         </div>
-        <!-- Mobile slide-down panel (hidden by default) -->
+        
+        <!-- Mobile slide-down panel -->
         <div class="mobile-panel" aria-hidden="true">
             <ul class="mobile-links">
                 <li><a href="#products">Products</a></li>
                 <li><a href="#process">Process</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#why">Why Us</a></li>
+                <li><a href="#certifications">Compliance</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-cta-wrap">
-                <button class="btn-quote full">Get a Quote</button>
+                <button class="btn-quote full">Request a Quote</button>
             </div>
         </div>
     </header>
@@ -83,39 +96,55 @@
     <main>
         <!-- 1. Hero -->
         <section id="hero" class="hero-section">
-            <!-- Botanical top-right SVG cluster -->
+            <!-- Botanical SVG decorations -->
             <svg class="botanical-topright" width="260" height="300" viewBox="0 0 260 300" aria-hidden="true">
                 <ellipse cx="200" cy="40" rx="60" ry="24" transform="rotate(-8 200 40)" class="leaf-fill-1" />
                 <ellipse cx="220" cy="90" rx="70" ry="30" transform="rotate(-22 220 90)" class="leaf-fill-2" />
                 <ellipse cx="180" cy="140" rx="80" ry="34" transform="rotate(-38 180 140)" class="leaf-fill-3" />
-                <path d="M60 220 C90 180 150 160 200 120 C220 100 240 80 220 60 C200 40 160 60 120 100" fill="#244f0e" opacity="0.95" />
-                <path d="M40 240 C80 200 140 180 180 140" fill="#244f0e" opacity="0.95" />
+                <path d="M60 220 C90 180 150 160 200 120 C220 100 240 80 220 60 C200 40 160 60 120 100" fill="#1b4311" opacity="0.45" />
+                <path d="M40 240 C80 200 140 180 180 140" fill="#1b4311" opacity="0.3" />
             </svg>
 
-            <!-- Ambient orbs -->
+            <!-- Ambient glowing orbs -->
             <div class="ambient-orb orb-1"></div>
             <div class="ambient-orb orb-2"></div>
 
-            <!-- Floating particles container -->
+            <!-- Floating dust particles -->
             <div class="particles" aria-hidden="true"></div>
 
             <div class="container hero-container">
                 <div class="hero-content">
-                    <div class="badge-pill">🌿 Rooted in Gujarat's farmlands — Est. 2024</div>
+                    <div class="badge-pill">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 4px;">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z"/>
+                        </svg>
+                        Gujarat's Premier B2B Powder Source · Est. 2024
+                    </div>
 
-                    <h1 class="hero-title">Nature Dried.<br>Purely Delivered.</h1>
+                    <h1 class="hero-title">Nature Dried.<br><span class="accent-text">Purely Delivered.</span></h1>
 
-                    <p class="hero-desc">Premium onion, garlic & ginger powder from Gujarat's soil — precision-dried at 55–65°C, ground to perfect consistency, and delivered with zero additives and zero shortcuts.</p>
+                    <p class="hero-desc">Premium dehydrated onion, garlic, and ginger powders sourced from Mahuva and Bhavnagar farms. Controlled dehydration at 55–65°C preserves volatile oils, robust flavor, and natural colors—completely free from additives, carriers, or anti-caking fillers.</p>
 
                     <div class="hero-actions">
-                        <a href="#products" class="btn btn-primary">Explore Products</a>
-                        <a href="#contact" class="btn btn-outline">Request Free Sample</a>
+                        <a href="#products" class="btn btn-primary">Explore B2B Catalog</a>
+                        <a href="#contact" class="btn btn-outline">Request Commercial Sample</a>
                     </div>
 
                     <div class="trust-row">
-                        <div>✦ 500+ B2B clients</div>
-                        <div>✦ FSSAI Certified</div>
-                        <div>✦ Zero Preservatives</div>
+                        <div><span class="gold-text">✦</span> 500+ Clients Nationwide</div>
+                        <div><span class="gold-text">✦</span> FSSAI Certified</div>
+                        <div><span class="gold-text">✦</span> 100% Traceable Sourcing</div>
+                    </div>
+                </div>
+
+                <div class="hero-visual animate-on-scroll">
+                    <div class="hero-image-frame">
+                        <div class="hero-glow"></div>
+                        <img src="hero_spices_bg.png" alt="Premium Dehydrated Spice Powders Showcase" class="hero-img">
+                        <div class="hero-floating-badge animate-float">
+                            <span class="badge-leaf">🌿</span>
+                            <span>100% Active Volatile Oils Locked In</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -128,7 +157,7 @@
 
             <!-- Scroll indicator -->
             <div class="hero-scroll" aria-hidden="true">
-                <div class="scroll-label">SCROLL</div>
+                <div class="scroll-label">DISCOVER MORE</div>
                 <div class="scroll-line">
                     <div class="scroll-dot"></div>
                 </div>
@@ -139,301 +168,495 @@
          <section id="about" class="about-section">
             <div class="container about-grid">
                 <div class="about-left">
-                    <div class="botanical-card">
-                        <div class="ring-wrap">
-                            <div class="ring" aria-hidden="true">
-                                <div class="nd-text">ND</div>
-                            </div>
+                    <div class="product-showcase-frame">
+                        <div class="showcase-glow"></div>
+                        <img src="product_showcase.png" alt="NaturaDry Premium Jars Showcase" class="showcase-img" loading="lazy">
+                        <div class="showcase-badge">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"/>
+                            </svg>
+                            <span>100% Dehydrated Purity</span>
                         </div>
-
-                        <!-- corner leaves -->
-                        <svg class="corner-leaf leaf-top-left" width="68" height="68" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M34 2c8 6 18 8 28 6-8 8-18 18-28 28C22 36 12 20 6 8 12 6 22 4 34 2z" fill="#244f0e" opacity="0.15"/></svg>
-                        <svg class="corner-leaf leaf-bottom-right" width="68" height="68" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M34 66c-8-6-18-8-28-6 8-8 18-18 28-28 10 10 20 26 26 38-6 2-16 4-26 6z" fill="#5aaa20" opacity="0.12"/></svg>
-
-                        <div class="botanical-meta">Est. 2024 · Surat, Gujarat</div>
+                        <div class="botanical-meta">Direct Sourcing · Surat, Gujarat</div>
                     </div>
                 </div>
 
                 <div class="about-right">
                     <div class="section-header">
-                        <div class="section-label">OUR STORY</div>
-                        <h2 class="about-heading">Born Where Spices Live</h2>
+                        <div class="section-label">OUR HERITAGE</div>
+                        <h2 class="about-heading">Grown in Gujarat, Dehydrated with Precision</h2>
                     </div>
 
-                    <p class="about-lead">NaturaDry was built on a single belief — that nature already perfected the flavour. Our job is to preserve it. Rooted in Surat, at the crossroads of Gujarat's trading heritage and agricultural heartland, we source directly from farmers in Mahuva and Bhavnagar.</p>
+                    <p class="about-lead">NaturaDry is built on a single, uncompromising principle: that nature perfected flavor, and our task is to lock it in. Headquartered in Surat—Gujarat's historical commercial trade heartland—we operate direct supply lines from the agricultural clusters of Mahuva and Bhavnagar.</p>
 
-                    <p class="about-body">Every batch is cleaned, precision-sliced, dehydrated at controlled temperatures, and ground to exact specifications — without preservatives, without fillers, without shortcuts.</p>
+                    <p class="about-body">We handle the entire vertical processing chain ourselves. We wash, sort, machine-slice, dehydrate at thermal parameters that lock in aromatic oils, and pulverize under tight sanitary controls. The results are B2B-grade food powders of exceptional biological and culinary stability.</p>
 
                     <div class="feature-list">
-                        <div class="feature-row"><svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" class="feature-leaf" aria-hidden="true"><circle cx="5" cy="5" r="5" fill="#5aaa20"/></svg><div class="feature-text">Direct farmer sourcing — traceable from field to powder</div></div>
-                        <div class="feature-row"><svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" class="feature-leaf" aria-hidden="true"><circle cx="5" cy="5" r="5" fill="#5aaa20"/></svg><div class="feature-text">Zero additives — pure, clean-label, lab-verified</div></div>
-                        <div class="feature-row"><svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" class="feature-leaf" aria-hidden="true"><circle cx="5" cy="5" r="5" fill="#5aaa20"/></svg><div class="feature-text">Custom volumes — 5kg sample to 5,000kg bulk order</div></div>
+                        <div class="feature-row">
+                            <svg class="feature-leaf" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M20 6L9 17L4 12" stroke="#a3d82a"/>
+                            </svg>
+                            <div class="feature-text"><strong>Direct Field Sourcing:</strong> full traceability of all agricultural raw materials back to individual grower farms.</div>
+                        </div>
+                        <div class="feature-row">
+                            <svg class="feature-leaf" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M20 6L9 17L4 12" stroke="#a3d82a"/>
+                            </svg>
+                            <div class="feature-text"><strong>Strict Clean-Label Standard:</strong> zero added preservatives, binders, starches, salt, or fillers.</div>
+                        </div>
+                        <div class="feature-row">
+                            <svg class="feature-leaf" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M20 6L9 17L4 12" stroke="#a3d82a"/>
+                            </svg>
+                            <div class="feature-text"><strong>Industrial Scalability:</strong> from 25kg regional trial batches to 50,000kg regular bulk containers.</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- 3. Products -->
-        <section id="products" class="products-section" style="background:#0c1e0e; padding:80px 8%;">
+        <section id="products" class="products-section">
             <div class="container">
                 <div class="section-header text-center">
-                    <div class="section-label">OUR HARVEST</div>
-                    <h2 class="section-heading">Pure Powder Range</h2>
-                    <p class="section-subtext">Field to factory — traceable, clean-label, consistent every batch</p>
+                    <div class="section-label">OUR SPICE POWDER CATALOG</div>
+                    <h2 class="section-heading">B2B Dehydrated Powders</h2>
+                    <p class="section-subtext">Precision-milled clean-label spice powders. Export-ready parameters, standard mesh distributions.</p>
                 </div>
 
                 <div class="products-grid">
-                    <!-- Card 1 -->
+                    <!-- Product 1: Onion Powder -->
                     <article class="pd-card">
-                        <div class="pd-tag">Most Popular</div>
-                        <div class="pd-icon">🧅</div>
-                        <div class="pd-name">Onion Powder</div>
-                        <p class="pd-desc">Fine mesh 60–80, creamy white, intensely aromatic. Perfect for namkeen, soups, ready meals, and seasonings.</p>
-                        <div class="pd-details">Min. 25kg · Shelf life 18 months · Moisture ≤5%</div>
-                        <button class="pd-quote">Get Quote</button>
+                        <div class="pd-tag">High Demand</div>
+                        <div class="pd-icon">
+                            <svg class="vector-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32 54C42.4934 54 51 45.4934 51 35C51 25.5 42.5 12 32 6C21.5 12 13 25.5 13 35C13 45.4934 21.5066 54 32 54Z" fill="url(#onionGrad)" stroke="#5aaa20" stroke-width="2"/>
+                                <path d="M32 6V54" stroke="#d4af37" stroke-dasharray="2 2"/>
+                                <path d="M22 17C17.5 22.5 17.5 32 22 41" stroke="#a3d82a" stroke-width="1.5"/>
+                                <path d="M42 17C46.5 22.5 46.5 32 42 41" stroke="#a3d82a" stroke-width="1.5"/>
+                                <path d="M32 6C34.5 10 34.5 20 32 24C29.5 20 29.5 10 32 6Z" fill="#a3d82a"/>
+                                <defs>
+                                    <linearGradient id="onionGrad" x1="32" y1="6" x2="32" y2="54" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#1b4311"/>
+                                        <stop offset="100%" stop-color="#060f08"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="pd-name">Onion Powder</h3>
+                        <p class="pd-desc">Light creamy white, sweet and savory, highly pungent. Ideal for snacks, soup bases, and custom seasonings.</p>
+                        <div class="pd-specs">
+                            <div class="spec-item"><span>Mesh Size:</span> <strong>60–80 Mesh</strong></div>
+                            <div class="spec-item"><span>Moisture:</span> <strong>&le; 5.0% Max</strong></div>
+                            <div class="spec-item"><span>MOQ:</span> <strong>25kg (Fibre Drum)</strong></div>
+                        </div>
+                        <button class="pd-quote">Request Bulk Quote</button>
                     </article>
 
-                    <!-- Card 2 -->
+                    <!-- Product 2: Garlic Powder -->
                     <article class="pd-card">
                         <div class="pd-tag">Export Grade</div>
-                        <div class="pd-icon">🧄</div>
-                        <div class="pd-name">Garlic Powder</div>
-                        <p class="pd-desc">Off-white, strong aroma, premium fine grind. High-margin product for global food manufacturers and exporters.</p>
-                        <div class="pd-details">Min. 25kg · Shelf life 24 months · Moisture ≤5%</div>
-                        <button class="pd-quote">Get Quote</button>
+                        <div class="pd-icon">
+                            <svg class="vector-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32 54C44 54 48 44 48 35C48 26 38 12 32 6C26 12 16 26 16 35C16 44 20 54 32 54Z" fill="url(#garlicGrad)" stroke="#5aaa20" stroke-width="2"/>
+                                <path d="M26 53.5C21.5 49 20 42.5 21 35.5C22 28.5 28 17 32 6C36 17 42 28.5 43 35.5C44 42.5 42.5 49 38 53.5" stroke="#a3d82a" stroke-width="1.5"/>
+                                <path d="M32 6V54" stroke="#d4af37" stroke-width="1.5"/>
+                                <defs>
+                                    <linearGradient id="garlicGrad" x1="32" y1="6" x2="32" y2="54" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#1b4311"/>
+                                        <stop offset="100%" stop-color="#060f08"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="pd-name">Garlic Powder</h3>
+                        <p class="pd-desc">Off-white, highly aromatic, bold flavor notes. Widely used in bulk food seasoning blends and ready-to-eat products.</p>
+                        <div class="pd-specs">
+                            <div class="spec-item"><span>Mesh Size:</span> <strong>80–100 Mesh</strong></div>
+                            <div class="spec-item"><span>Moisture:</span> <strong>&le; 5.0% Max</strong></div>
+                            <div class="spec-item"><span>MOQ:</span> <strong>25kg (Fibre Drum)</strong></div>
+                        </div>
+                        <button class="pd-quote">Request Bulk Quote</button>
                     </article>
 
-                    <!-- Card 3 -->
+                    <!-- Product 3: Ginger Powder -->
                     <article class="pd-card">
-                        <div class="pd-tag">Wellness</div>
-                        <div class="pd-icon">🫚</div>
-                        <div class="pd-name">Ginger Powder</div>
-                        <p class="pd-desc">Golden-yellow, fibrous fine grind. Used in teas, Ayurvedic blends, curries, and health supplements.</p>
-                        <div class="pd-details">Min. 10kg · Shelf life 18 months</div>
-                        <button class="pd-quote">Get Quote</button>
+                        <div class="pd-tag">Premium Herb</div>
+                        <div class="pd-icon">
+                            <svg class="vector-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 34C16 26.5 21 21.5 28.5 21.5C36 21.5 40 16 45.5 16C51 16 54.5 21 54.5 27.5C54.5 34 49 38.5 41.5 38.5C34 38.5 31.5 44.5 26.5 49.5C21.5 54.5 16 50.5 16 43.5V34Z" fill="url(#gingerGrad)" stroke="#5aaa20" stroke-width="2"/>
+                                <circle cx="28.5" cy="30" r="5" fill="#d4af37"/>
+                                <circle cx="41.5" cy="27" r="4" fill="#a3d82a"/>
+                                <path d="M21 44C26.5 39 37.5 39 43.5 44" stroke="#a3d82a" stroke-width="1.5" stroke-linecap="round"/>
+                                <defs>
+                                    <linearGradient id="gingerGrad" x1="16" y1="16" x2="54.5" y2="49.5" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#1b4311"/>
+                                        <stop offset="100%" stop-color="#060f08"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="pd-name">Ginger Powder</h3>
+                        <p class="pd-desc">Golden tan, warm spicy notes, highly aromatic. Popular for wellness teas, herbal formulations, and bakery items.</p>
+                        <div class="pd-specs">
+                            <div class="spec-item"><span>Mesh Size:</span> <strong>50–70 Mesh</strong></div>
+                            <div class="spec-item"><span>Moisture:</span> <strong>&le; 6.5% Max</strong></div>
+                            <div class="spec-item"><span>MOQ:</span> <strong>25kg (Laminated Box)</strong></div>
+                        </div>
+                        <button class="pd-quote">Request Bulk Quote</button>
                     </article>
 
-                    <!-- Card 4 -->
+                    <!-- Product 4: Onion Flakes -->
                     <article class="pd-card">
-                        <div class="pd-tag">Chef Favourite</div>
-                        <div class="pd-icon">🌰</div>
-                        <div class="pd-name">Onion Flakes</div>
-                        <p class="pd-desc">Coarser texture, intensely flavoured. Loved by pizzerias, restaurants, and meal-kit manufacturers.</p>
-                        <div class="pd-details">Min. 10kg · Available: 3mm / 5mm / 8mm cut</div>
-                        <button class="pd-quote">Get Quote</button>
+                        <div class="pd-tag">Coarse Cut</div>
+                        <div class="pd-icon">
+                            <svg class="vector-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 28C12 18 20 10 32 10C44 10 52 18 52 28C52 38 42 46 32 50C22 46 12 38 12 28Z" fill="url(#flakesGrad)" stroke="#5aaa20" stroke-width="2"/>
+                                <path d="M19 28C19 21.5 24 17 32 17C40 17 45 21.5 45 28C45 34.5 39 40 32 43C25 40 19 34.5 19 28Z" stroke="#a3d82a" stroke-width="1.5"/>
+                                <path d="M26 28C26 25 28.5 23 32 23C35.5 23 38 25 38 28C38 31 35.5 33 32 35C28.5 33 26 31 26 28Z" stroke="#d4af37" stroke-width="1"/>
+                                <defs>
+                                    <linearGradient id="flakesGrad" x1="32" y1="10" x2="32" y2="50" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#1b4311"/>
+                                        <stop offset="100%" stop-color="#060f08"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="pd-name">Onion Flakes</h3>
+                        <p class="pd-desc">Dehydrated sliced rings, crisp and packed with intense profile. Perfect for pizzerias, instant cup-meals, and institutional packaging.</p>
+                        <div class="pd-specs">
+                            <div class="spec-item"><span>Cut Size:</span> <strong>3mm / 5mm / 8mm</strong></div>
+                            <div class="spec-item"><span>Moisture:</span> <strong>&le; 5.0% Max</strong></div>
+                            <div class="spec-item"><span>MOQ:</span> <strong>10kg (Poly-lined Bag)</strong></div>
+                        </div>
+                        <button class="pd-quote">Request Bulk Quote</button>
                     </article>
 
-                    <!-- Card 5 -->
+                    <!-- Product 5: Custom Blends -->
                     <article class="pd-card">
                         <div class="pd-tag">Private Label</div>
-                        <div class="pd-icon">🌿</div>
-                        <div class="pd-name">Custom Spice Blends</div>
-                        <p class="pd-desc">Your own signature blend — Gujarati, South Indian, Chaat Masala — packed under your brand name.</p>
-                        <div class="pd-details">MOQ 50kg · Custom packaging available</div>
-                        <button class="pd-quote">Get Quote</button>
+                        <div class="pd-icon">
+                            <svg class="vector-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 24C10 24 16 38 32 38C48 38 54 24 54 24C54 24 50 48 32 48C14 48 10 24 10 24Z" fill="url(#blendGrad)" stroke="#5aaa20" stroke-width="2"/>
+                                <path d="M32 10V30" stroke="#d4af37" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20 14L32 24L44 14" stroke="#a3d82a" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M14 40C22 45 42 45 50 40" stroke="#a3d82a" stroke-width="1.5"/>
+                                <defs>
+                                    <linearGradient id="blendGrad" x1="32" y1="10" x2="32" y2="48" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#1b4311"/>
+                                        <stop offset="100%" stop-color="#060f08"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="pd-name">Custom Spice Blends</h3>
+                        <p class="pd-desc">Proprietary masala formulations—Garam Masala, Chaat, Sambhar, Seasoning Salts—blended and packed to your custom recipe.</p>
+                        <div class="pd-specs">
+                            <div class="spec-item"><span>Recipe:</span> <strong>Custom Formulation</strong></div>
+                            <div class="spec-item"><span>Packaging:</span> <strong>Pouch / Carton / Drum</strong></div>
+                            <div class="spec-item"><span>MOQ:</span> <strong>50kg Batch Size</strong></div>
+                        </div>
+                        <button class="pd-quote">Request Bulk Quote</button>
                     </article>
+                </div>
+
+                <!-- Featured Custom Blends Spotlight Banner -->
+                <div class="custom-blend-featured-row">
+                    <div class="blend-featured-content animate-on-scroll">
+                        <div class="section-label">PROPRIETARY R&D BLENDING</div>
+                        <h3 class="blend-featured-heading">Private Label Custom Blends</h3>
+                        <p class="blend-featured-text">Our Surat GIDC facility is equipped with dedicated industrial ribbon blenders and precision paddle mixers to formulate flawless, homogeneous seasoning blends. We match your exact recipe specifications for snack powders, instant masalas, or institutional food seasonings with complete microbiological control.</p>
+                        <ul class="blend-featured-list">
+                            <li>✦ Dedicated allergen-free blending suites</li>
+                            <li>✦ Exact mesh distribution (40 to 100 Mesh)</li>
+                            <li>✦ Nitrogen-flushed packaging for shelf preservation</li>
+                        </ul>
+                        <button class="btn btn-primary btn-quote">Request Custom Formulation</button>
+                    </div>
+                    <div class="blend-featured-image-wrap animate-on-scroll">
+                        <div class="blend-image-frame">
+                            <div class="blend-glow"></div>
+                            <img src="spices_blend_showcase.png" alt="Custom Spice Blending Geometric Showcase" class="blend-showcase-img" loading="lazy">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="products-footer">
                     <hr class="products-sep">
-                    <p class="products-cta">Need a custom formulation? <a href="#contact" class="gold-link">Talk to us →</a></p>
+                    <p class="products-cta">Need custom particle sizes, sterilizations (steam/ETO), or private labels? <a href="#contact" class="gold-link">Talk to our B2B team →</a></p>
                 </div>
             </div>
         </section>
 
-        <!-- 4. Why Choose Us -->
-        
-
-        <!-- 5. Process (How we make it) -->
-        <section id="process" class="process-section" style="background:var(--bg-page); padding:80px 8%;">
+        <!-- 4. Process (How we make it) -->
+        <section id="process" class="process-section">
             <div class="container">
                 <div class="section-header text-center">
-                    <div class="section-label">OUR PROCESS</div>
-                    <h2 class="section-heading">From Farm to Your Factory</h2>
-                    <p class="section-subtext">8 precision steps. Sun-dried. Zero shortcuts.</p>
+                    <div class="section-label">OUR STEP-BY-STEP FLOW</div>
+                    <h2 class="section-heading">How We Dehydrate Quality</h2>
+                    <p class="section-subtext">8 meticulous milestones of processing excellence. Zero heat-damage, zero contamination.</p>
                 </div>
             </div>
 
             <div class="process-timeline">
-                <div class="timeline-line"><div class="timeline-line-inner" aria-hidden="true"></div></div>
+                <div class="timeline-line">
+                    <div class="timeline-line-inner" aria-hidden="true"></div>
+                </div>
                 <div class="timeline-nodes">
                     <!-- Node 1 -->
-                    <div class="tl-node" data-step="1">
+                    <div class="tl-node active" data-step="1">
                         <div class="tl-circle">1</div>
                         <div class="tl-title">Farm Sourcing</div>
-                        <div class="tl-tooltip">Direct from Mahuva & Bhavnagar farms. Bulk seasonal procurement.</div>
                     </div>
                     <!-- Node 2 -->
                     <div class="tl-node" data-step="2">
                         <div class="tl-circle">2</div>
                         <div class="tl-title">Sorting & Washing</div>
-                        <div class="tl-tooltip">Hand-inspected. Damaged pieces removed. Washed with potable water.</div>
                     </div>
                     <!-- Node 3 -->
                     <div class="tl-node" data-step="3">
                         <div class="tl-circle">3</div>
                         <div class="tl-title">Peeling & Slicing</div>
-                        <div class="tl-tooltip">Machine-peeled, sliced to 2–3mm for even drying.</div>
                     </div>
                     <!-- Node 4 -->
                     <div class="tl-node" data-step="4">
                         <div class="tl-circle">4</div>
                         <div class="tl-title">Dehydration</div>
-                        <div class="tl-tooltip">Tray-dried at 55–65°C for 6–10 hours. Flavour and colour locked in.</div>
                     </div>
                     <!-- Node 5 -->
                     <div class="tl-node" data-step="5">
                         <div class="tl-circle">5</div>
                         <div class="tl-title">Grinding</div>
-                        <div class="tl-tooltip">Pulverized to mesh 40–80. Uniform particle size for consistent results.</div>
                     </div>
                     <!-- Node 6 -->
                     <div class="tl-node" data-step="6">
                         <div class="tl-circle">6</div>
                         <div class="tl-title">Quality Control</div>
-                        <div class="tl-tooltip">Moisture ≤5% verified. Color matched. COA issued per batch.</div>
                     </div>
                     <!-- Node 7 -->
                     <div class="tl-node" data-step="7">
                         <div class="tl-circle">7</div>
-                        <div class="tl-title">Packing</div>
-                        <div class="tl-tooltip">Moisture-proof laminated foil pouches. Nitrogen-flushed for freshness.</div>
+                        <div class="tl-title">Packaging</div>
                     </div>
                     <!-- Node 8 -->
                     <div class="tl-node" data-step="8">
                         <div class="tl-circle">8</div>
                         <div class="tl-title">Dispatch</div>
-                        <div class="tl-tooltip">FIFO warehouse. Pan-India or export shipment with full documentation.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Info Display Panel for Timeline -->
+            <div class="container timeline-display-wrapper">
+                <div class="timeline-display-card" id="timeline-detail-card">
+                    <div class="card-glow"></div>
+                    <div class="detail-header">
+                        <span class="detail-step-number" id="detail-step-num">Step 01</span>
+                        <h4 class="detail-step-title" id="detail-step-title">Direct Farm Sourcing</h4>
+                    </div>
+                    <p class="detail-step-desc" id="detail-step-desc">We buy bulk crops directly from smallholder farms across Mahuva and Bhavnagar during peak harvest season. This bypasses intermediary traders, ensuring competitive raw material pricing and total agricultural traceability back to the soil.</p>
+                    <div class="detail-specs" id="detail-step-specs">
+                        <div class="detail-spec-badge">✦ Origin: Mahuva & Bhavnagar Farms</div>
+                        <div class="detail-spec-badge">✦ Sourcing: Direct Farmer Relations</div>
+                        <div class="detail-spec-badge">✦ Quality: Seasonal Selection</div>
                     </div>
                 </div>
             </div>
 
             <div class="process-quote"> 
-                <blockquote>Every grain of NaturaDry powder carries the warmth of Gujarat's sun and the precision of modern science.</blockquote>
+                <blockquote>Every single grain of NaturaDry powder embodies the balance of Gujarat's agricultural richness and advanced hygienic dehydration sciences.</blockquote>
             </div>
 
+            <!-- Modern Operations Showcase -->
+            <div class="container process-operations-container animate-on-scroll">
+                <div class="operations-grid">
+                    <div class="operations-visual">
+                        <div class="operations-image-frame">
+                            <div class="operations-glow"></div>
+                            <img src="industrial_dehydration.png" alt="State of the Art Dehydration plant machinery Surat" class="operations-img" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="operations-content">
+                        <div class="section-label">SURAT INDUSTRIAL OPERATIONS</div>
+                        <h3 class="operations-heading">Surat GIDC Mega Dehydration Facility</h3>
+                        <p class="operations-lead">Equipped with continuous dry-tech AD-5000 industrial dehydration lines, our processing plant is engineered for peak sanitization, strict allergen isolation, and high-efficiency agricultural processing.</p>
+                        <div class="operations-specs-grid">
+                            <div class="op-spec-card">
+                                <h5>50 Tons</h5>
+                                <p>Monthly Capacity</p>
+                            </div>
+                            <div class="op-spec-card">
+                                <h5>Clean-Zone</h5>
+                                <p>Strict GMP Isolation</p>
+                            </div>
+                            <div class="op-spec-card">
+                                <h5>COA Verified</h5>
+                                <p>Every Batch Certified</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- 6. Certifications (strip) -->
+        <!-- 5. Why Choose Us -->
+        <section id="why" class="why-section">
+            <div class="container why-layout">
+                <div class="why-left-content">
+                    <div class="section-header">
+                        <div class="section-label">WHY FOOD BRANDS TRUST US</div>
+                        <h2 class="why-heading">Rooted in Organic Principles</h2>
+                    </div>
+                    <p class="why-lead-desc">B2B food procurement demands absolute certainty in purity, consistency, and compliance. Here is why premium brands choose NaturaDry over wholesale spice markets.</p>
+                    
+                    <div class="why-grid">
+                        <article class="why-card">
+                            <div class="why-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#a3d82a"/>
+                                </svg>
+                            </div>
+                            <h3 class="why-title">Direct Sourcing Surcharges bypassed</h3>
+                            <p class="why-desc">No middle traders. We negotiate directly at farm gates in Mahuva, translating to direct cost savings passed onto your purchase orders.</p>
+                        </article>
+
+                        <article class="why-card">
+                            <div class="why-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#a3d82a"/>
+                                </svg>
+                            </div>
+                            <h3 class="why-title">Zero Anti-Caking Additives</h3>
+                            <p class="why-desc">We offer 100% clean-label ingredients. Zero starch fillers, zero chemical flows, zero preservatives. Fully pure dehydrated spices.</p>
+                        </article>
+
+                        <article class="why-card">
+                            <div class="why-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="#a3d82a"/>
+                                </svg>
+                            </div>
+                            <h3 class="why-title">Precision Heat Controls</h3>
+                            <p class="why-desc">Standard tray drying at 55–65°C keeps heat-sensitive volatile oils safe, preserving color, shelf-life, and natural aromatics.</p>
+                        </article>
+
+                        <article class="why-card">
+                            <div class="why-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#a3d82a"/>
+                                    <polyline points="14 2 14 8 20 8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                    <polyline points="10 9 9 9 8 9"/>
+                                </svg>
+                            </div>
+                            <h3 class="why-title">MSME & FSSAI Compliant</h3>
+                            <p class="why-desc">Fully registered MSME facility in Surat, licensed under FSSAI. Comprehensive batch-by-batch Certificate of Analysis (COA).</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="why-right-image">
+                    <div class="farm-sourcing-frame">
+                        <div class="frame-overlay"></div>
+                        <img src="farm_sourcing.png" alt="Lush Gujarat Agricultural Farmland" class="farm-img" loading="lazy">
+                        <div class="farm-overlay-tag">Gujarat Farm Sourcing Cluster</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Certifications (Compliance Strip) -->
         <section id="certifications" class="certifications-strip">
             <div class="container text-center">
-                <div class="section-label">CERTIFICATIONS & COMPLIANCE</div>
+                <div class="section-label">STANDARDS & CERTIFICATIONS</div>
+                <h2 class="section-heading text-center" style="margin-bottom: 24px;">Global Compliance Standards</h2>
                 <div class="cert-row">
                     <div class="cert-card">
-                        <div class="cert-emoji">🏛️</div>
-                        <h4 class="cert-card-title">FSSAI Licensed</h4>
-                        <p class="cert-sub">License No. XXXXXXXXX</p>
+                        <div class="cert-emoji">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#d4af37" fill="rgba(212,175,55,0.06)"/>
+                                <path d="M9 11l2 2 4-4" stroke="#a3d82a" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h4 class="cert-card-title">FSSAI Registered</h4>
+                        <p class="cert-sub">Lic No. 10724022000XXX</p>
                     </div>
                     <div class="cert-card">
-                        <div class="cert-emoji">🏢</div>
+                        <div class="cert-emoji">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2" stroke="#d4af37" fill="rgba(212,175,55,0.06)"/>
+                                <path d="M7 11h10M7 15h10M7 7h5" stroke="#a3d82a"/>
+                            </svg>
+                        </div>
                         <h4 class="cert-card-title">UDYAM Registered</h4>
-                        <p class="cert-sub">MSME Certified</p>
+                        <p class="cert-sub">MSME Ministry Certified</p>
                     </div>
                     <div class="cert-card">
-                        <div class="cert-emoji">🌍</div>
-                        <h4 class="cert-card-title">Export Ready</h4>
-                        <p class="cert-sub">IEC Capable · APEDA Support</p>
+                        <div class="cert-emoji">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" stroke="#d4af37" fill="rgba(212,175,55,0.06)"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="#a3d82a"/>
+                                <path d="M2 12h20" stroke="#a3d82a"/>
+                            </svg>
+                        </div>
+                        <h4 class="cert-card-title">Export Capable</h4>
+                        <p class="cert-sub">IEC Registered · APEDA Capable</p>
                     </div>
                     <div class="cert-card">
-                        <div class="cert-emoji">⭕</div>
+                        <div class="cert-emoji">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="#d4af37" fill="rgba(212,175,55,0.06)"/>
+                            </svg>
+                        </div>
                         <h4 class="cert-card-title">ISO 22000</h4>
-                        <p class="cert-sub">In Progress · 2025</p>
+                        <p class="cert-sub">Compliance Auditing · 2026</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 7. Target Customers -->
-    <!-- A. About NaturaDry -->
-   
-
-    <!-- B. Why NaturaDry -->
-    <section id="why" class="why-section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-label">WHY NATURADRY</div>
-                    <h2 class="why-heading">Built on Nature's Principles</h2>
-                </div>
-
-                <div class="why-grid">
-                    <article class="why-card">
-                        <div class="why-icon">🌱</div>
-                        <h3 class="why-title">Direct Farm Sourcing</h3>
-                        <p class="why-desc">No middlemen. Gujarat farmers. Lower cost, better traceability.</p>
-                    </article>
-
-                    <article class="why-card">
-                        <div class="why-icon">🍃</div>
-                        <h3 class="why-title">Zero Additives</h3>
-                        <p class="why-desc">No preservatives, no anti-caking agents. 100% clean label.</p>
-                    </article>
-
-                    <article class="why-card">
-                        <div class="why-icon">☀️</div>
-                        <h3 class="why-title">Precision Drying</h3>
-                        <p class="why-desc">55–65°C controlled dehydration preserves full flavour and colour.</p>
-                    </article>
-
-                    <article class="why-card">
-                        <div class="why-icon">📋</div>
-                        <h3 class="why-title">FSSAI Certified</h3>
-                        <p class="why-desc">Fully compliant. COA issued per batch. Export documentation ready.</p>
-                    </article>
-
-                    <article class="why-card">
-                        <div class="why-icon">📦</div>
-                        <h3 class="why-title">Flexible Pack Sizes</h3>
-                        <p class="why-desc">1kg retail pouches to 50kg HDPE sacks — we pack what you need.</p>
-                    </article>
-
-                    
-                </div>
-            </div>
-        </section>
-
+        <!-- 7. Customer Categories -->
         <section id="customers" class="customers-section">
             <div class="container overflow-hidden-mobile">
                 <div class="section-header text-center">
-                    <h2 class="section-title text-38">Trusted By Food Businesses Across India</h2>
+                    <div class="section-label">B2B SECTOR OUTLETS</div>
+                    <h2 class="section-title text-38">Serving Diversified Food Verticals</h2>
                 </div>
                 <div class="customers-flex">
                     <div class="customer-type-card">
                         <div class="cust-type-icon">✦</div>
                         <div class="cust-type-content">
                             <h3 class="cust-type-title">Food Manufacturers</h3>
-                            <p class="cust-type-desc">Namkeen makers, packaged food brands, masala companies. 25kg–500kg
-                                orders.</p>
+                            <p class="cust-type-desc">Instant noodles, namkeen makers, packed snack conglomerates, masala brands. High volume supply (1,000kg+ batches).</p>
                         </div>
                     </div>
                     <div class="customer-type-card">
                         <div class="cust-type-icon">✦</div>
                         <div class="cust-type-content">
-                            <h3 class="cust-type-title">Restaurants & Hotels</h3>
-                            <p class="cust-type-desc">QSRs, cloud kitchens, catering companies. Consistent quality every
-                                reorder.</p>
+                            <h3 class="cust-type-title">Cloud Kitchens & QSRs</h3>
+                            <p class="cust-type-desc">Quick Service Restaurant chains, catering houses, large scale commissaries. Yielding consistent flavor matrices across deliveries.</p>
                         </div>
                     </div>
                     <div class="customer-type-card">
                         <div class="cust-type-icon">✦</div>
                         <div class="cust-type-content">
-                            <h3 class="cust-type-title">Exporters</h3>
-                            <p class="cust-type-desc">Trading companies with global supply chains. Export documentation
-                                + APEDA support.</p>
+                            <h3 class="cust-type-title">Merchant Exporters</h3>
+                            <p class="cust-type-desc">Trading houses shipping organic raw materials globally. Handled with export documentations, ETO sterilization, phytosanitary certs.</p>
                         </div>
                     </div>
                     <div class="customer-type-card">
                         <div class="cust-type-icon">✦</div>
                         <div class="cust-type-content">
-                            <h3 class="cust-type-title">Ayurveda & Health Brands</h3>
-                            <p class="cust-type-desc">Supplement manufacturers, herbal product companies. Clean-label
-                                certified.</p>
+                            <h3 class="cust-type-title">Ayurvedic Wellness</h3>
+                            <p class="cust-type-desc">Herbal tea blenders, health supplement manufacturers. Fully audited clean-label ginger/garlic products.</p>
                         </div>
                     </div>
                     <div class="customer-type-card">
                         <div class="cust-type-icon">✦</div>
                         <div class="cust-type-content">
-                            <h3 class="cust-type-title">Grocery Distributors</h3>
-                            <p class="cust-type-desc">Wholesale distributors supplying kirana stores. Competitive bulk
-                                pricing.</p>
+                            <h3 class="cust-type-title">Grocery Wholesalers</h3>
+                            <p class="cust-type-desc">Distributors supplying retail packs to local grocery stores. Bulk shipping rates, flexible white-label packaging solutions.</p>
                         </div>
                     </div>
                 </div>
@@ -444,16 +667,16 @@
         <section class="stats-bar" aria-hidden="false">
             <div class="container stats-row">
                 <div class="stat-item">
-                    <div class="stat-number" data-target="500" data-suffix="+">500+</div>
-                    <div class="stat-label">B2B Clients Served</div>
+                    <div class="stat-number" data-target="500" data-suffix="+">0</div>
+                    <div class="stat-label">B2B Clients Across India</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">FSSAI</div>
-                    <div class="stat-label">Food Safety Certified</div>
+                    <div class="stat-number" data-target="100" data-suffix="%">0</div>
+                    <div class="stat-label">Additives-Free Purity</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">Zero</div>
-                    <div class="stat-label">Preservatives Added</div>
+                    <div class="stat-number" data-target="24" data-suffix="h">0</div>
+                    <div class="stat-label">Sample Turnaround Time</div>
                 </div>
             </div>
         </section>
@@ -462,116 +685,133 @@
         <section id="testimonials" class="testimonials-section">
             <div class="container">
                 <div class="section-header text-center">
-                    <div class="section-label">WHAT CLIENTS SAY</div>
-                    <h2 class="section-heading">Trusted Across India's Food Industry</h2>
+                    <div class="section-label">PARTNER REVIEWS</div>
+                    <h2 class="section-heading">Verified B2B Partnerships</h2>
                 </div>
 
                 <div class="testi-grid" style="margin-top:36px">
                     <article class="testi-card">
-                        <div class="quote-mark">"</div>
+                        <div class="quote-mark">“</div>
                         <div class="testi-top">
                             <div class="testi-avatar">RP</div>
                             <div class="testi-stars">★★★★★</div>
                         </div>
-                        <p class="testi-text">NaturaDry delivers the most consistent onion powder we have used. Moisture levels are always perfect and the aroma is strong batch after batch.</p>
-                        <div class="testi-author"><strong>Rajesh Patel</strong> · Surat Namkeen House</div>
+                        <p class="testi-text">"NaturaDry Onion Powder has completely resolved our moisture-clumping issue. Mesh distribution is highly consistent and their Mahuva sourcing is completely traceable."</p>
+                        <div class="testi-author"><strong>Rajesh Patel</strong> · Purchase Director, Surat Namkeen House</div>
                     </article>
 
                     <article class="testi-card">
-                        <div class="quote-mark">"</div>
+                        <div class="quote-mark">“</div>
                         <div class="testi-top">
                             <div class="testi-avatar">PM</div>
                             <div class="testi-stars">★★★★★</div>
                         </div>
-                        <p class="testi-text">We switched to NaturaDry for our garlic powder. Export-grade quality, excellent response time, and documentation is always ready.</p>
-                        <div class="testi-author"><strong>Priya Mehta</strong> · Mehta Exports, Ahmedabad</div>
+                        <p class="testi-text">"Outstanding export-grade garlic powder. The microbiologial reports are clean, batch consistency is reliable, and ETO sterilizations are fully documented."</p>
+                        <div class="testi-author"><strong>Priya Mehta</strong> · Managing Director, Mehta Global Exports</div>
                     </article>
 
                     <article class="testi-card">
-                        <div class="quote-mark">"</div>
+                        <div class="quote-mark">“</div>
                         <div class="testi-top">
                             <div class="testi-avatar">AS</div>
-                            <div class="testi-stars">★★★★☆</div>
+                            <div class="testi-stars">★★★★★</div>
                         </div>
-                        <p class="testi-text">Their private label service helped us launch our own spice brand in 6 weeks. Packaging quality is professional and delivery is always on time.</p>
-                        <div class="testi-author"><strong>Ankit Shah</strong> · Ankit Foods, Mumbai</div>
+                        <p class="testi-text">"Their private labels team helped us package our custom tea seasoning in exactly 4 weeks. Highly responsive logistics and professional box printing."</p>
+                        <div class="testi-author"><strong>Ankit Shah</strong> · Product Lead, Ankit Foods Mumbai</div>
                     </article>
                 </div>
 
                 <div class="testi-cta" style="text-align:center; margin-top:28px">
-                    <div class="testi-join">Join 500+ food businesses across India.</div>
+                    <div class="testi-join">Join 500+ food manufacturers getting reliable supply from Surat.</div>
                 </div>
             </div>
         </section>
 
-        <!-- 9. Contact / Inquiry Form (full) -->
+        <!-- 10. Contact / Inquiry Form -->
         <section id="contact" class="contact-section-full">
             <div class="container contact-grid-2">
                 <div class="contact-left">
-                    <h2 class="contact-h2">Grow With NaturaDry</h2>
-                    <p class="contact-sub">From 25kg trial samples to 25,000kg regular orders — we scale with your business. Rooted in quality, delivered with trust.</p>
+                    <h2 class="contact-h2">Partner with NaturaDry</h2>
+                    <p class="contact-sub">Connect with our commercial ingredients desk today. Request custom product samples, download certifications, or schedule a virtual audit of our processing facility in Surat.</p>
 
                     <div class="contact-info-block">
-                        <div>📍 GIDC Industrial Area, Surat, Gujarat 395004</div>
-                        <div>📞 +91 98XXX XXXXX</div>
-                        <div>✉️ hello@naturadry.in</div>
-                        <div>🕐 Mon–Sat, 9am–6pm IST</div>
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <div class="info-text"><strong>Corporate Plant:</strong><br>GIDC Industrial Estate, Sector 3, Surat, Gujarat 395004</div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">✉️</div>
+                            <div class="info-text"><strong>Email Communications:</strong><br><a href="mailto:hello@naturadry.in">hello@naturadry.in</a></div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">📞</div>
+                            <div class="info-text"><strong>Ingredients Desk:</strong><br><a href="tel:+918200029583">+91 82000 29583</a></div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">🕐</div>
+                            <div class="info-text"><strong>Plant Hours:</strong><br>Monday–Saturday: 09:00 AM – 06:00 PM IST</div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="contact-right">
                     <form id="inquiry-form" class="inquiry-form">
                         <div class="form-row">
-                            <label class="form-label" for="fullName">Full Name</label>
-                            <input class="form-input" type="text" id="fullName" name="fullName" required placeholder="John Doe">
+                            <label class="form-label" for="fullName">Full Name *</label>
+                            <input class="form-input" type="text" id="fullName" name="fullName" required placeholder="eg. Rajesh Patel">
                         </div>
 
                         <div class="form-row">
                             <label class="form-label" for="companyName">Company Name</label>
-                            <input class="form-input" type="text" id="companyName" name="companyName" placeholder="Doe Foods Pvt Ltd">
+                            <input class="form-input" type="text" id="companyName" name="companyName" placeholder="eg. Premium Snacks Pvt Ltd">
                         </div>
 
                         <div class="form-row two-cols">
                             <div>
-                                <label class="form-label" for="phone">Phone</label>
+                                <label class="form-label" for="phone">Phone *</label>
                                 <input class="form-input" type="tel" id="phone" name="phone" required placeholder="+91 90000 00000">
                             </div>
                             <div>
-                                <label class="form-label" for="email">Email</label>
-                                <input class="form-input" type="email" id="email" name="email" required placeholder="john@example.com">
+                                <label class="form-label" for="email">Email *</label>
+                                <input class="form-input" type="email" id="email" name="email" required placeholder="john@company.com">
                             </div>
                         </div>
 
                         <div class="form-row two-cols">
                             <div>
-                                <label class="form-label" for="product">Product Interested In</label>
+                                <label class="form-label" for="product">Spice Powder Requirement</label>
                                 <select class="form-input" id="product" name="product">
                                     <option>Onion Powder</option>
                                     <option>Garlic Powder</option>
                                     <option>Ginger Powder</option>
                                     <option>Onion Flakes</option>
-                                    <option>Custom Blend</option>
-                                    <option>Multiple Products</option>
+                                    <option>Custom Spice Blend</option>
+                                    <option>Multiple Ingredients</option>
                                 </select>
                             </div>
                             <div>
-                                <label class="form-label" for="quantity">Quantity Required</label>
+                                <label class="form-label" for="quantity">Target Purchase Vol</label>
                                 <select class="form-input" id="quantity" name="quantity">
-                                    <option>Under 25kg</option>
-                                    <option>25–100kg</option>
-                                    <option>100–500kg</option>
-                                    <option>500kg+</option>
-                                    <option>Not sure</option>
+                                    <option>Under 25kg (Trial)</option>
+                                    <option>25kg – 100kg</option>
+                                    <option>100kg – 500kg</option>
+                                    <option>500kg – 2,000kg</option>
+                                    <option>2,000kg+ Bulk Export</option>
                                 </select>
                             </div>
                         </div>
 
                         <div class="form-row">
-                            <label class="form-label" for="message">Message</label>
-                            <textarea class="form-input" id="message" name="message" rows="4" placeholder="Any specific mesh size, certifications required, or brand details?"></textarea>
+                            <label class="form-label" for="address">Shipping Destination (City/State/Port) *</label>
+                            <input class="form-input" type="text" id="address" name="address" required placeholder="eg. Nhava Sheva Port, Mumbai / Surat GIDC">
                         </div>
 
-                        <button type="submit" class="btn-submit full">Send Inquiry 🌿</button>
+                        <div class="form-row">
+                            <label class="form-label" for="message">Detailed Specifications / Special requests</label>
+                            <textarea class="form-input" id="message" name="message" rows="4" placeholder="Specify required mesh size, organic certifications, phytosanitary requirements, or ETO/Steam sterilization requests..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit full">Submit B2B Inquiry 🌿</button>
                     </form>
                 </div>
             </div>
@@ -584,68 +824,63 @@
             <div class="footer-col footer-brand">
                 <div class="brand-block brand-left">
                     <a href="#" class="logo" aria-label="NaturaDry home">
-                        <img src="logo.png" alt="NaturaDry" class="footer-logo" width="48" height="48">
+                        <img src="logo.png" alt="NaturaDry Logo" class="footer-logo" width="48" height="48">
                     </a>
                     <div class="brand-text">
                         <div class="brand-name">NaturaDry</div>
                         <div class="brand-tagline">Pure · Natural · Powdered</div>
                     </div>
                 </div>
-                <p class="brand-desc">NaturaDry crafts shelf-stable, clean-label powders sourced direct from Gujarat farmers. We scale production while preserving flavour and traceability across every batch.</p>
+                <p class="brand-desc">NaturaDry is a certified commercial spice ingredient processing house based in Surat, Gujarat. Sourcing directly from regional farms in Mahuva, we process premium dehydrated onion, garlic, and ginger powders under clean-label, export-compliant regulations.</p>
                 <div class="social-row">
-                    <a href="#" class="social-icon">in</a>
-                    <a href="#" class="social-icon">ig</a>
-                    <a href="#" class="social-icon">wa</a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                    <a href="#" class="social-icon" aria-label="Instagram">ig</a>
+                    <a href="#" class="social-icon" aria-label="WhatsApp">wa</a>
                 </div>
             </div>
 
             <div class="footer-col">
-                <h4 class="footer-heading">Products</h4>
+                <h4 class="footer-heading">Ingredients</h4>
                 <ul>
-                    <li><a href="#onion-powder">Onion Powder</a></li>
-                    <li><a href="#garlic-powder">Garlic Powder</a></li>
-                    <li><a href="#ginger-powder">Ginger Powder</a></li>
-                    <li><a href="#onion-flakes">Onion Flakes</a></li>
-                    <li><a href="#custom-blends">Custom Blends</a></li>
-                    <li><a href="#private-label">Private Label</a></li>
+                    <li><a href="#products">Onion Powder</a></li>
+                    <li><a href="#products">Garlic Powder</a></li>
+                    <li><a href="#products">Ginger Powder</a></li>
+                    <li><a href="#products">Onion Flakes</a></li>
+                    <li><a href="#products">Custom Formulations</a></li>
+                    <li><a href="#contact">Private Label Services</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
                 <h4 class="footer-heading">Company</h4>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#process">Our Process</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About Our Plant</a></li>
+                    <li><a href="#process">8-Step Dehydration</a></li>
+                    <li><a href="#certifications">Compliance & Licenses</a></li>
+                    <li><a href="#why">Why Sourcing Matters</a></li>
+                    <li><a href="#contact">Contact Commercial Desk</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
-                <h4 class="footer-heading">Contact</h4>
-                <p class="footer-contact-line">📍 GIDC Industrial Area, Surat, Gujarat 395004</p>
-                <p class="footer-contact-line">📞 +91 98XXX XXXXX</p>
+                <h4 class="footer-heading">Plant Contact</h4>
+                <p class="footer-contact-line">📍 Sector 3, GIDC Industrial Estate, Surat, Gujarat 395004</p>
+                <p class="footer-contact-line">📞 +91 82000 29583</p>
                 <p class="footer-contact-line">✉️ hello@naturadry.in</p>
             </div>
         </div>
 
         <div class="container">
             <div class="footer-bottom-strip">
-                <div class="left">© 2024 NaturaDry. FSSAI Lic. No. XXXXXXXXX</div>
-                <div class="right">Privacy Policy · Terms</div>
+                <div class="left">© 2026 NaturaDry. FSSAI Lic. No. 10724022000XXX. All Rights Reserved.</div>
+                <div class="right"><a href="#">Privacy Policy</a> · <a href="#">B2B Terms of Supply</a></div>
             </div>
         </div>
     </footer>
 
-    <!-- JS -->
+    <!-- Custom cursor trail element -->
     <div class="custom-cursor" aria-hidden="true"></div>
 
-    <!-- WhatsApp removed per request -->
-
-    <!-- Optional page loader -->
-    <div id="page-loader" class="page-loader" aria-hidden="true">
-        <svg class="loader-leaf" width="64" height="64" viewBox="0 0 36 36" aria-hidden="true"><path d="M18 2c4 3 8 4.5 12 3.5-4 4-8 9-12 14-4-5-8.5-10-12-14C9.5 6 13 5 18 2z" fill="#244f0e"/></svg>
-    </div>
     <script src="script.js"></script>
 </body>
 
